@@ -5,9 +5,9 @@ This is a recreation of https://github.com/Hao840/ADEM-VL ADEM-VL code.
 
 These instructions mostly follow the readme listed there.
 
-1. Download the ScienceQA dataset from here [https://github.com/lupantech/ScienceQA](url).
+1. Download the ScienceQA dataset from here [https://github.com/lupantech/ScienceQA](url). Look at the folder hierarchy below to figure out what files you need. You will not need all_data.json as that is for COCO
 
-2. Download the LLaMA 7B model, this can be found on the ADEM-VL github. This is very large so you may have to copy it in to colab from your drive like I did.
+2. Download the LLaMA 7B model, this can be found on the ADEM-VL github. This is very large so you may have to copy it in to colab from your drive like I did. If you want to use the LLaMA 13B, there shouldn't be any issues as long as you have all the necessary files.
 
 3. Organize your file structure as shown in the ADEM-VL github. The notebook should structure the important things for you and unzip the data if necessary
 
