@@ -25,7 +25,7 @@ These instructions mostly follow the readme listed there.
   
     adapter = torch.load(os.path.join(args.adapter_path, 'checkpoint-19.pth'))['model']
 
-   Where checkpoint-19.pth, insert the name of your model whether its the one you trained or their pretrained weights (can also be found on their github).
+   Where checkpoint-19.pth is, insert the name of your model whether its the one you trained or their pretrained weights (can also be found on their github).
 
 11. After this you should be able to run the functions as written in the notebook and adjust hyperparameters as necessary.
 
