@@ -15,9 +15,17 @@ These instructions mostly follow the readme listed there.
 
    Some notes: Make sure params.json is both in weights and the sub folder for the model. Also tokenizer.model is not a subfolder but a file, 7B and 13B are not subfolders of it. 
 
-5. Add this line to train.py line 24: parser.add_argument('--llama_model_path', type=str, default=None) . This fixes an error where the arguments won't properly pass to build.py
+5. Add this line to train.py line 24:
+  
+   parser.add_argument('--llama_model_path', type=str, default=None)
 
-6. In eval_sqa.py change line 159: adapter = torch.load(os.path.join(args.adapter_path, 'checkpoint-19.pth'))['model']. Where checkpoint-19.pth, insert the name of your model whether its the one you trained or their pretrained weights (can also be found on their github).
+   This fixes an error where the arguments won't properly pass to build.py
 
-7. After this you should be able to run the functions as written in the notebook and adjust hyperparameters as necessary.
+8. In eval_sqa.py change line 159:
+  
+    adapter = torch.load(os.path.join(args.adapter_path, 'checkpoint-19.pth'))['model']
+
+   Where checkpoint-19.pth, insert the name of your model whether its the one you trained or their pretrained weights (can also be found on their github).
+
+11. After this you should be able to run the functions as written in the notebook and adjust hyperparameters as necessary.
 
